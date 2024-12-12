@@ -1,23 +1,22 @@
-package ru.inno.consultation;
+package ru.inno.consultation.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@ToString
-@Setter
+import java.math.BigDecimal;
+
 @Getter
+@Setter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 public class Product {
 
-    private Integer id;
-    private String description;
+    private Long id;
+    private String name;
     private Long price;
-    private Long count;
 
 }
